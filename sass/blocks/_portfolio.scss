@@ -1,0 +1,138 @@
+%titles-fonts {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #000000;
+  font-size: 27.5px;
+  line-height: 41px;
+}
+
+.portfolio__header {
+  margin-bottom: 24px;
+  @extend %titles-fonts;
+}
+
+.balance-card {
+  position: relative;
+  width: 486px;
+  height: 244px;
+  background: #e5f2fe;
+  border-radius: 24px;
+  padding: 26px 28px 25px 35px;
+}
+
+.balance-card__balance-value {
+  @extend %titles-fonts;
+  margin-bottom: 5px;
+}
+
+.balance-card__balance-desc {
+  @extend %titles-fonts;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.balance-card__settings,
+.asset-card__settings {
+  position: absolute;
+  top: 36px;
+  right: 16px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover > * {
+    background-color: blue;
+  }
+}
+
+.icon-show-more {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: #a0a9b2;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-color: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    transform: translateY(-8px);
+  }
+
+  &::after {
+    transform: translateY(8px);
+  }
+}
+
+.balance-card__periods {
+  position: absolute;
+  bottom: 25px;
+  left: 34px;
+  display: flex;
+}
+
+.balance-card__periods-btn {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #acbccd;
+
+  & + & {
+    margin-left: 24px;
+  }
+
+  &--active {
+    color: #040404;
+  }
+  z-index: 10;
+}
+
+.balance-card__chart {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 28px;
+}
+
+.badge {
+  position: absolute;
+  width: 126px;
+  height: 44px;
+  top: 51px;
+  right: 59px;
+  z-index: 10;
+  background-color: #222222;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 7px);
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: inherit;
+    z-index: 1;
+  }
+}

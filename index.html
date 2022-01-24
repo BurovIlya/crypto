@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto wallet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <div class="dashboard__nav">
+            <div class="nav">
+                <div class="nav__logo">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.svg" alt="logotipe">
+                    </a>
+                </div>
+                <div class="nav__icons">
+                    <ul class="nav__icons-list">
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="8" height="9" stroke-width="2"/>
+                                    <rect x="15" y="1" width="8" height="9" stroke-width="2"/>
+                                    <rect x="15" y="15" width="8" height="9" stroke-width="2"/>
+                                    <rect x="1" y="15" width="8" height="9" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8049 5.99481H21.5063V3.09482C21.5063 1.8845 20.5216 0.89978 19.3113 0.89978H3.39057C1.6337 0.89978 0.18517 2.24358 0.0179557 3.95723C-0.00758115 4.07832 0.00151224 2.99936 0.00151224 19.7111C0.00151224 21.5798 1.5218 23.1001 3.39052 23.1001H21.8049C23.0152 23.1001 23.9999 22.1154 23.9999 20.905V8.18985C24 6.97954 23.0153 5.99481 21.8049 5.99481ZM3.39057 2.40754H19.3113C19.6903 2.40754 19.9986 2.71587 19.9986 3.09487V5.99486H3.39057C2.38261 5.99486 1.55747 5.19799 1.51149 4.2012C1.55742 3.20437 2.38257 2.40754 3.39057 2.40754ZM21.8049 21.5924H3.39057C2.35321 21.5924 1.50927 20.7484 1.50927 19.7111V6.93119C2.04785 7.29196 2.69504 7.50252 3.39057 7.50252H21.8049C22.1839 7.50252 22.4922 7.81085 22.4922 8.18985V11.2461H16.8191C14.887 11.2461 13.3151 12.8179 13.3151 14.75C13.3151 16.6821 14.887 18.2539 16.8191 18.2539H22.4922V20.905C22.4922 21.284 22.1839 21.5924 21.8049 21.5924ZM22.4922 16.7463H16.8191C15.7184 16.7463 14.8228 15.8508 14.8228 14.75C14.8228 13.6493 15.7183 12.7538 16.8191 12.7538H22.4922V16.7463Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="16" width="5" height="10" stroke-width="2"/>
+                                    <rect x="11" y="1" width="5" height="25" stroke-width="2"/>
+                                    <rect x="21" y="11" width="5" height="15" stroke-width="2"/>
+                                </svg>
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.4832 0L0.925781 7.25V21.75L13.4832 29L26.0406 21.75V7.25L13.4832 0ZM23.4811 7.74007L13.4832 13.5126L3.48523 7.74007L13.4832 1.96782L23.4811 7.74007ZM2.62987 9.21428L12.6311 14.9883V26.5403L2.62987 20.7661V9.21428ZM14.3352 26.5403V14.9883L24.3365 9.21428V20.7661L14.3352 26.5403Z" />
+                                </svg>
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 0C7.15606 0 4.43555 2.72051 4.43555 6.06445C4.43555 9.40839 7.15606 12.1289 10.5 12.1289C13.8439 12.1289 16.5645 9.40839 16.5645 6.06445C16.5645 2.72051 13.8439 0 10.5 0ZM10.5 10.7812C7.89916 10.7812 5.7832 8.66529 5.7832 6.06445C5.7832 3.46361 7.89916 1.34766 10.5 1.34766C13.1008 1.34766 15.2168 3.46361 15.2168 6.06445C15.2168 8.66529 13.1008 10.7812 10.5 10.7812Z" />
+                                    <path d="M12.3792 13.5215H8.62074C5.51205 13.5215 2.44412 14.9568 0.392578 18.0342V23H20.6074V18.0342C18.5588 14.9612 15.4918 13.5215 12.3792 13.5215ZM19.2598 21.6523H19.2598H1.74023V18.4466C3.31389 16.2026 5.87089 14.8691 8.62078 14.8691H12.3793C15.1292 14.8691 17.6861 16.2026 19.2598 18.4466V21.6523Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.50004 0H13.5C14.878 0 16 1.122 16 2.49998V8.49998C16 8.77598 15.776 8.99999 15.5 8.99999C15.224 8.99999 15 8.77598 15 8.49998V2.49998C15 1.67297 14.327 0.999984 13.5 0.999984H2.49994C1.67293 0.999984 0.999945 1.67297 0.999945 2.49998V20.5C0.999945 21.327 1.67293 22 2.49994 22H13.5C14.327 22 15 21.327 15 20.5V14.5C15 14.224 15.224 14 15.5 14C15.776 14 16 14.224 16 14.5V20.5C16 21.878 14.878 23 13.5 23H2.50004C1.12205 23 5.43594e-05 21.878 5.43594e-05 20.5V2.49998C7.62939e-06 1.122 1.12201 0 2.50004 0Z" />
+                                    <path d="M6.50001 11H22.5C22.776 11 23 11.224 23 11.5C23 11.776 22.776 12 22.5 12H6.50001C6.22401 12 6 11.776 6 11.5C6 11.224 6.22401 11 6.50001 11Z" />
+                                    <path d="M6.14698 11.148L9.14698 8.14799C9.34198 7.95299 9.65899 7.95299 9.85399 8.14799C10.049 8.34299 10.049 8.66 9.85399 8.855L7.208 11.501L9.85399 14.147C10.049 14.342 10.049 14.659 9.85399 14.854C9.75598 14.951 9.62801 15 9.49999 15C9.37198 15 9.24401 14.951 9.14698 14.855L6.14698 11.8551C5.95198 11.66 5.95198 11.343 6.14698 11.148Z" />
+                                    <path d="M3.50004 0H14.5C15.878 0 17 1.122 17 2.49998V8.49998C17 8.77598 16.776 8.99999 16.5 8.99999C16.224 8.99999 16 8.77598 16 8.49998V2.49998C16 1.67297 15.327 0.999984 14.5 0.999984H3.49994C2.67293 0.999984 1.99994 1.67297 1.99994 2.49998V20.5C1.99994 21.327 2.67293 22 3.49994 22H14.5C15.327 22 16 21.327 16 20.5V14.5C16 14.224 16.224 14 16.5 14C16.776 14 17 14.224 17 14.5V20.5C17 21.878 15.878 23 14.5 23H3.50004C2.12205 23 1.00005 21.878 1.00005 20.5V2.49998C1.00001 1.122 2.12201 0 3.50004 0Z" />
+                                    <path d="M7.50001 11H23.5C23.776 11 24 11.224 24 11.5C24 11.776 23.776 12 23.5 12H7.50001C7.22401 12 7 11.776 7 11.5C7 11.224 7.22401 11 7.50001 11Z" />
+                                    <path d="M7.14698 11.148L10.147 8.14799C10.342 7.95299 10.659 7.95299 10.854 8.14799C11.049 8.34299 11.049 8.66 10.854 8.855L8.208 11.501L10.854 14.147C11.049 14.342 11.049 14.659 10.854 14.854C10.756 14.951 10.628 15 10.5 15C10.372 15 10.244 14.951 10.147 14.855L7.14698 11.8551C6.95198 11.66 6.95198 11.343 7.14698 11.148Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard__body">
+
+            <div class="dashboard__header">
+                <h1 class="dashboard__header-title">Overview</h1>
+                <div class="dashboard__header-icons">
+
+                    <div class="search-box">
+
+                        <button class="header-icon btn-search">
+                            <img alt="search" src="./img/top-icons/search.svg">
+                        </button>
+
+                        <input type="text" class="input-search" placeholder="Найти..." autocomplete="off">
+
+                    </div>
+                    
+                    <button class="header-icon header-icon--new">
+                        <img alt="notification" src="./img/top-icons/bell.svg">
+                    </button>
+
+                    <div class="user-profile dropdown">
+                        <a href="#" class="user-profile__avatar">
+                            <img src="img/top-icons/avatar.svg" alt="avatar">
+                        </a>
+                        <button class="user-profile__nav-button dropdown__button">Zoia M.</button>
+
+                        <ul class="dropdown__list">
+
+                            <li class="dropdown__list-item" data-value="1">option 1</li>
+                   
+                            <li class="dropdown__list-item" data-value="2">option 2</li>
+                   
+                            <li class="dropdown__list-item" data-value="3">option 3</li>
+                   
+                            <li class="dropdown__list-item" data-value="4">option 4</li>
+                   
+                         </ul>
+
+                         <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard__cards">
+                <div class="portfolio">
+                    <div class="portfolio__header">Portfolio</div>
+                    <div class="portfolio__card">
+                        <div class="balance-card">
+
+                            <div class="balance-card__balance">
+                                <div class="balance-card__balance-value">$ 17 643.41</div>
+                                <div class="balance-card__balance-desc">Portfolio balance</div>
+                            </div>
+
+                            <button class="balance-card__settings">
+                                <div class="icon-show-more"></div>
+                            </button>
+
+                            <div class="balance-card__periods">
+                                <button class="balance-card__periods-btn">1H</button>
+                                <button class="balance-card__periods-btn">24H</button>
+                                <button class="balance-card__periods-btn balance-card__periods-btn--active">1W</button>
+                                <button class="balance-card__periods-btn">1M</button>
+                                <button class="balance-card__periods-btn">1Y</button>
+                                <button class="balance-card__periods-btn">ALL</button>
+                            </div>
+
+                            <img src="./img/line-chart.svg" alt="chart" class="balance-card__chart">
+
+                            <div class="badge">$27 482.00</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="assets">
+                    <div class="assets__header">
+                        <div class="portfolio__header">Your Assets</div>
+                        <button>
+                            <img src="./img/settings.svg" alt="settings" width="23" height="15">
+                        </button>
+                    </div>
+                    <div class="assets__cards">
+
+                        <div class="asset-card">
+                            <div class="asset-card__value">1.25 BTC</div>
+                            <div class="asset-card__fiat">$ 2948.04</div>
+                            <button class="asset-card__settings">
+                                <div class="icon-show-more"></div>
+                            </button>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img alt="bitcoin-icon" src="./img/card-icons/bitcoin.svg" width="21" height="29">
+                                </div>
+                                <div class="asset-card__income">+ 0.14%</div>
+                            </div>
+                        </div>
+
+                        <div class="asset-card">
+                            <div class="asset-card__value">0.32 LTC</div>
+                            <div class="asset-card__fiat">$ 2948.04</div>
+                            <button class="asset-card__settings">
+                                <div class="icon-show-more"></div>
+                            </button>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img alt="ltc-icon" src="./img/card-icons/ltc.svg" width="21" height="29">
+                                </div>
+                                <div class="asset-card__income">+ 0.31%</div>
+                            </div>
+                        </div>
+
+                        <div class="asset-card">
+                            <div class="asset-card__value">1.25 ETH</div>
+                            <div class="asset-card__fiat">$ 2948.04</div>
+                            <button class="asset-card__settings">
+                                <div class="icon-show-more"></div>
+                            </button>
+                            <div class="asset-card__footer">
+                                <div class="asset-card__icon">
+                                    <img alt="ltc-icon" src="./img/card-icons/ethereum.svg" width="21" height="29">
+                                </div>
+                                <div class="asset-card__income">+ 0.27%</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard__market">
+
+                <div class="market">
+
+                    <div class="market__header">
+
+                        <h2 class="market__header-title">Market is down 0.80%</h2>
+
+                        <div class="market__header-btns">
+
+                            <div class="dropdown">
+
+                                <button class="dropdown-btn dropdown__button">
+                                    <span class="dropdown-btn__title">24H</span>
+                                    <span class="dropdown-btn__select">
+                                        <img alt="arrow-select" src="./img/arrow-down.svg" width="12" height="6">
+                                    </span>
+                                </button>
+
+                                <ul class="dropdown__list">
+
+                                    <li class="dropdown__list-item" data-value="1">3H</li>
+                           
+                                    <li class="dropdown__list-item" data-value="2">6H</li>
+                           
+                                    <li class="dropdown__list-item" data-value="3">12H</li>
+                           
+                                    <li class="dropdown__list-item" data-value="4">24H</li>
+                           
+                                 </ul>
+
+                                 <input type="text" name="select-category2" value="" class="dropdown__input-hidden">
+
+                            </div>
+
+                            <div class="dropdown">
+
+                                <button class="dropdown-btn dropdown__button">
+                                    <span class="dropdown-btn__title">Top gainers</span>
+                                    <span class="dropdown-btn__select">
+                                        <img alt="arrow-select" src="./img/arrow-down.svg" width="12" height="6">
+                                    </span>
+                                </button>
+
+                                <ul class="dropdown__list">
+
+                                    <li class="dropdown__list-item" data-value="1">Top gainers</li>
+                           
+                                    <li class="dropdown__list-item" data-value="2">Down gainers</li>
+                           
+                                    <li class="dropdown__list-item" data-value="3">Top-10</li>
+                           
+                                    <li class="dropdown__list-item" data-value="4">Top-20</li>
+                           
+                                 </ul>
+
+                                 <input type="text" name="select-category3" value="" class="dropdown__input-hidden">
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="market__table">
+
+                        <table class="market-table" cellpadding="0" cellspacing="0">
+                            <col span="1" style="width: 38%;">
+                            <col span="1" style="width: 17%;">
+                            <col span="1" style="width: 17%;">
+                            <col span="1" style="width: 17%;">
+                            <col span="1" style="width: 11%;">   
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Chanee</th>
+                                    <th>Market Cap</th>
+                                    <th>Watch</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img alt="Band Protocol" src="./img/currency-icons/band-protocol.svg" width="32" height="32">
+                                            </div>
+                                            <div class="coin__text">
+                                                <div class="coin__title">Band Protocol</div>
+                                                <div class="coin__desc">BAND</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="market-table__price">$2.42</td>
+                                    <td class="market-table__chanee">+13.38%</td>
+                                    <td class="market-table__cap">$399.8M</td>
+                                    <td class="market-table__rate">
+                                        <button>
+                                            <img src="./img/star.svg" alt="star" width="22" height="21.5">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img alt="VeChain" src="./img/currency-icons/vechain.svg" width="32" height="32">
+                                            </div>
+                                            <div class="coin__text">
+                                                <div class="coin__title">VeChain</div>
+                                                <div class="coin__desc">VET</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="market-table__price">$7.48</td>
+                                    <td class="market-table__chanee">+11.19%</td>
+                                    <td class="market-table__cap">$152.5M</td>
+                                    <td class="market-table__rate">
+                                        <button>
+                                            <img src="./img/star.svg" alt="star" width="22" height="21.5">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img alt="Aave" src="./img/currency-icons/aave.svg" width="32" height="32">
+                                            </div>
+                                            <div class="coin__text">
+                                                <div class="coin__title">Aave</div>
+                                                <div class="coin__desc">AAVE</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="market-table__price">$0.0184</td>
+                                    <td class="market-table__chanee">+7.57%</td>
+                                    <td class="market-table__cap">$1.2B</td>
+                                    <td class="market-table__rate">
+                                        <button>
+                                            <img src="./img/star.svg" alt="star" width="22" height="21.5">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="coin">
+                                            <div class="coin__icon">
+                                                <img alt="Waves" src="./img/currency-icons/waves.svg" width="32" height="32">
+                                            </div>
+                                            <div class="coin__text">
+                                                <div class="coin__title">Waves</div>
+                                                <div class="coin__desc">WAVES</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="market-table__price">$30.68</td>
+                                    <td class="market-table__chanee">+6.80%</td>
+                                    <td class="market-table__cap">$399.8M</td>
+                                    <td class="market-table__rate">
+                                        <button>
+                                            <img src="./img/star.svg" alt="star" width="22" height="21.5">
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="earn-free">
+
+                    <div class="earn-free__title">Earn <span class="earn-free__title-free"></span> crypto <span style="font-weight: 600;">with Coinview Earn!</span></div>
+
+                    <div class="earn-free__text">Learn about different cryptocurrencies and
+                        earn them for free!</div>
+
+                    <div>
+                        <a href="#" target="_blank" class="earn-free__button">Earn now</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+<script src="./js/main.js"></script>
+
+</body>
+</html>

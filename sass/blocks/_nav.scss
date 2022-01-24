@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.nav__logo {
+  margin-bottom: 132px;
+}
+.nav__icons {
+  margin-top: auto;
+  height: 100%;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.nav__icons-list {
+  @extend .nav;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li + li {
+    margin-top: 50px;
+  }
+
+  li:last-child {
+    margin-top: auto;
+  }
+
+  svg {
+    stroke: #a5a5a5;
+    fill: #a5a5a5;
+    transition: all 0.2s linear;
+
+    &:hover {
+      stroke: #e5f2fe;
+      fill: #e5f2fe;
+    }
+  }
+}

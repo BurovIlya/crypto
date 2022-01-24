@@ -1,0 +1,29 @@
+.dashboard__market {
+  display: flex;
+}
+
+.market {
+  flex-grow: 1;
+  margin-right: 32px;
+}
+
+.market__header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.market__header-title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.market__header-btns {
+  display: flex;
+
+  & > * + * {
+    margin-left: 16px;
+  }
+}

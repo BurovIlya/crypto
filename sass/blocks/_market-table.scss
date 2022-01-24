@@ -1,0 +1,104 @@
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: left;
+    padding: 0;
+    border: none;
+  }
+
+  thead {
+    th {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0.02em;
+      color: #8290a0;
+      padding-bottom: 22px;
+    }
+  }
+
+  tbody {
+    tr {
+      &:last-child > td {
+        padding-bottom: 0;
+      }
+
+      td {
+        padding-bottom: 20px;
+        padding-right: 15px;
+      }
+
+      td:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+.coin {
+  display: flex;
+
+  & > * + * {
+    margin-left: 15px;
+  }
+}
+.coin__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #222222;
+  border-radius: 15px;
+}
+.coin__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.coin__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 3px;
+}
+.coin__desc {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #7a899a;
+  margin-bottom: 1px;
+}
+
+.market-table__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.market-table__chanee {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #4ba582;
+}
+
+.market-table__cap {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: right !important;
+}
+
+.market-table__rate {
+  text-align: center !important;
+}

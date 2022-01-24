@@ -1,0 +1,78 @@
+.earn-free {
+  position: relative;
+  width: 410px;
+  height: 363px;
+  background: #222222;
+  border-radius: 30px;
+  padding: 50px 40px 50px 34px;
+  background-image: url("../img/earn-card/bg-cards.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: right bottom;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;
+  }
+
+  &::after {
+    width: 345px;
+    height: 48px;
+    bottom: -16px;
+    z-index: -1;
+    background: #dfdfe3;
+  }
+
+  &::before {
+    width: 295px;
+    height: 48px;
+    bottom: -28px;
+    z-index: -2;
+    background: #f0f0f1;
+  }
+}
+.earn-free__title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 11px;
+}
+
+.earn-free__title-free {
+  display: inline-block;
+  background-image: url("../img/earn-card/free.svg");
+  width: 98px;
+  height: 75px;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.earn-free__text {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.earn-free__button {
+  display: inline-block;
+  padding: 10px 40px 12px 34px;
+  background: #bcdfff;
+  border-radius: 23px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #f2f5fa;
+    color: #4ba582;
+  }
+}

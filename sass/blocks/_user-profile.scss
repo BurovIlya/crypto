@@ -1,0 +1,28 @@
+.user-profile {
+  @extend .header-icon;
+  width: auto;
+  height: 54px;
+  border-radius: 27px;
+}
+.user-profile__avatar {
+  margin-top: -16px;
+  margin-right: 6px;
+  margin-left: 4px;
+}
+.user-profile__nav-button {
+  position: relative;
+  height: 100%;
+  padding-right: 41px;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 21px;
+    background-image: url("../img/arrow-down.svg");
+    width: 12px;
+    height: 7px;
+  }
+}

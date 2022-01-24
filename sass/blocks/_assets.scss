@@ -1,0 +1,73 @@
+.assets {
+  flex-grow: 1;
+}
+
+.assets__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.assets__cards {
+  display: flex;
+
+  & > * + * {
+    margin-left: 30px;
+  }
+}
+
+.asset-card {
+  position: relative;
+  width: 194px;
+  min-height: 244px;
+  background-color: #e5def0;
+  border-radius: 24px;
+  padding: 30px 24px 26px 25px;
+
+  &:nth-child(2) {
+    background-color: #d6edda;
+  }
+
+  &:nth-child(3) {
+    background-color: #f6f0d8;
+  }
+}
+
+.asset-card__value {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.asset-card__fiat {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.asset-card__footer {
+  position: absolute;
+  left: 24px;
+  bottom: 26px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.asset-card__icon {
+  width: 56px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.asset-card__income {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #896ab9;
+}

@@ -1,0 +1,16 @@
+.dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eff2f4;
+  border-radius: 22px;
+  padding: 9px 18px;
+}
+
+.dropdown-btn__title {
+  font-size: 16px;
+  /*line-height: 24px;*/
+  letter-spacing: 0.02em;
+  color: #020b2a;
+  margin-right: 8px;
+}
